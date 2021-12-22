@@ -83,6 +83,7 @@ body {
 }
 
 .header .icon {
+  font-size: 1.5em;
   color: var(--accent-color2);
 }
 
@@ -90,7 +91,7 @@ body {
 /* === Intro === */
 .intro {
   width: 100%;
-  height: 100vh;
+  height: auto;
 
   background-color: var(--accent-color2);
 }
@@ -133,15 +134,17 @@ body {
 /* === Slider === */
 .intro__slider {
   width: 100%;
-  /*height: 600px;*/
   display: flex;
   justify-content: space-between;
 }
 
 
+.slider__inner {
+  width: 40%;
+  position: relative;
+}
+
 .description {
-  width: 400px;
-  padding-bottom: 60px;
   color: white;
 }
 
@@ -171,8 +174,7 @@ body {
 }
 
 .photo {
-  right: 0;
-  top: 0;
+  width: 50%;
 }
 
 .photo img {
@@ -181,6 +183,13 @@ body {
 }
 
 .slider__btns {
+  position: absolute;
+  top: 65%;
+  right: 0;
+
+}
+
+.slider__btn {
   display: inline-block;
   margin: 0 15px 0 0;
 
@@ -195,6 +204,7 @@ body {
 /* === Subtitle === */
 .intro__subtitle {
   display: flex;
+  margin: -6px 0 0;
 
   font-size: 21px;
   color: white;
@@ -202,10 +212,18 @@ body {
 
 .subtitle__btn {
   width: 25%;
+  padding: 20px 0;
+
+  text-align: center;
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .subtitle__btn:first-child {
   width: 50%;
 }
 
-.
+.subtitle__btn:nth-child(2) {
+  background-color: var(--accent-color2);
+}
+
