@@ -20,6 +20,14 @@ body {
 
 }
 
+section {
+  margin: 40px 0;
+}
+
+section:first-child {
+  margin: 0 0 40px;
+}
+
 
 /* === Header === */
 
@@ -175,6 +183,7 @@ body {
 
 .photo {
   width: 50%;
+  line-height: 0;
 }
 
 .photo img {
@@ -204,8 +213,7 @@ body {
 /* === Subtitle === */
 .intro__subtitle {
   display: flex;
-  margin: -6px 0 0;
-
+  /*margin: -6px 0 0;*/
   font-size: 21px;
   color: white;
 }
@@ -227,3 +235,74 @@ body {
   background-color: var(--accent-color2);
 }
 
+
+/* === Course === */
+.we {
+  display: flex;
+
+}
+
+.course {
+  height: 580px;
+  width: 530px;
+
+  background-color: var(--accent-color);
+}
+
+.suptitle {
+  display: inline-block;
+  padding: 10px 15px;
+
+  font-size: 18px;
+  color: white;
+  line-height: 1.2;
+
+  background-color: var(--accent-color2);
+
+  transform: translate(35px, 35px);
+}
+
+.course__title {
+  font-size: 30px;
+  color: white;
+
+  padding: 30px 40px 10px;
+}
+
+.more {
+  display: flex;
+  margin-left: 30px;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.more p {
+  margin-left: 10px;
+
+  font-size: 16px;
+  line-height: 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+.more p:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  color: white;
+  font-size: 20px;
+}
+
+.course .course__img {
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+}
+
+.course__img img {
+  max-width: 100%;
+  background-size: cover;
+}
