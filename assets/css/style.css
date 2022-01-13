@@ -2,7 +2,6 @@
 @import url('normalize.css');
 
 /* === General === */
-
 body {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
@@ -15,9 +14,8 @@ body {
 }
 
 :root {
-  --accent-color: #00868A;
-  --accent-color2: #4FBFA5;
-
+  --accent-color: #00868a;
+  --accent-color2: #4fbfa5;
 }
 
 section {
@@ -27,7 +25,6 @@ section {
 section:first-child {
   margin: 0 0 40px;
 }
-
 
 /* === Header === */
 
@@ -49,7 +46,6 @@ section:first-child {
   height: 100%;
   display: flex;
   align-items: center;
-
 
   position: relative;
 }
@@ -94,7 +90,6 @@ section:first-child {
   font-size: 1.5em;
   color: var(--accent-color2);
 }
-
 
 /* === Intro === */
 .intro {
@@ -146,7 +141,6 @@ section:first-child {
   justify-content: space-between;
 }
 
-
 .slider__inner {
   width: 40%;
   position: relative;
@@ -195,7 +189,6 @@ section:first-child {
   position: absolute;
   top: 65%;
   right: 0;
-
 }
 
 .slider__btn {
@@ -235,16 +228,19 @@ section:first-child {
   background-color: var(--accent-color2);
 }
 
-
 /* === Course === */
-.we {
+.we__inner {
   display: flex;
-
+  flex-flow: row wrap;
+  /* align-content: space-between; */
+  justify-content: space-between;
 }
 
 .course {
   height: 580px;
   width: 530px;
+  /* margin-bottom: 30px; */
+  overflow: hidden;
 
   background-color: var(--accent-color);
 }
@@ -252,6 +248,7 @@ section:first-child {
 .suptitle {
   display: inline-block;
   padding: 10px 15px;
+  margin-bottom: 10px;
 
   font-size: 18px;
   color: white;
@@ -305,4 +302,66 @@ section:first-child {
 .course__img img {
   max-width: 100%;
   background-size: cover;
+  transform: translateY(-100px);
 }
+
+/* === Patent === */
+.achieves {
+  display: flex;
+  width: 636px;
+  padding: 35px;
+  
+  position: relative;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #a9a9a9ff;
+}
+
+.text__number {
+  margin: 10px;
+  font-size: 48px;
+}
+
+.text--selected {
+  font-size: 28px;
+  color: #000;
+}
+
+.text__number--selected {
+  font-size: 96px;
+  color: var(--accent-color);
+  margin-right: 15px;
+}
+
+.achieves__patent {
+  width: 400px;
+  height: auto;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.achieves__patent img {
+  max-width: 100%;
+}
+
+.achieves__text .suptitle {
+  transform: none;
+}
+
+
+/* === Questions === */
+.questions {
+  width: 100%;
+}
+
+
+
